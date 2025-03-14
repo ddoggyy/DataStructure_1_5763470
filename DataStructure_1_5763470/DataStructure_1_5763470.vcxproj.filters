@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1완성_이상민_5763470_0311.cpp">
+    <ClCompile Include="2완성_이상민_5763470_0313.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3완성_이상민_5763470_0313.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1완성_이상민_5763470_0311.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
