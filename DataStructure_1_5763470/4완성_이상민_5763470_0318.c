@@ -1,17 +1,16 @@
 /*
- 변수 count, n 선언
-	"정수 n을 입력하세요: " 메시지 출력
-	사용자로부터 n 값을 입력 받음
+ DECLARE int count, n
+	PRINT "정수 n을 입력하세요: "
+	READ n
 
-	"n 이하의 소수: " 출력
+	PRINT "n 이하의 소수: "
 
-	i를 2부터 n까지 반복
-		count를 0으로 초기화
-		j를 2부터 i까지 반복
-			만약 i가 j로 나누어 떨어지면
-				count를 1 증가시킴 (나누어떨어지는 횟수)
-		만약 count가 1이라면 i는 소수이므로
-			i를 출력
+	FOR i FROM 2 to n DO {
+		count = 0 
+		FOR j FROM 2 TO i-1 DO {
+			IF (i % j == 0) THEN count = count + 1
+		}
+		IF (count == 0) THEN PRINT i
 */
 
 #include <stdio.h>
@@ -24,10 +23,10 @@ int main(void) {
 	printf("%d 이하의 소수: ", n);
 	for (int i = 2; i <= n; i++) {
 		count = 0; 
-		for (int j = 2; j <= i; j++) {
+		for (int j = 2; j < i; j++) {
 			if (i % j == 0) count++; // i의 나누어 떨어지는 횟수를 계산
 		}
-		if (count == 1) printf("%d ", i); // 나누어 떨어지는 횟수가 1번 뿐인 경우 출력
+		if (count == 0) printf("%d ", i); // 나누어 떨어지는 횟수가 없는 경우 출력
 	}
 	return 0;
 }
