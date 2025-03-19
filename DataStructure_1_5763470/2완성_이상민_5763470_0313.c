@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 int main(void) {
-	float num; // º¯¼ö num ¼±¾ð
+	float num; // ë³€ìˆ˜ num ì„ ì–¸
 	int tmp;
-	printf("½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-	scanf_s("%f", &num); // numÀÇ °ª ¹ÞÀ½
+	printf("ì‹¤ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
+	scanf_s("%f", &num); // numì˜ ê°’ ë°›ìŒ
 
-	tmp = *(unsigned int*)&num; //numÀÇ ÁÖ¼Ò¸¦ unsigned int*·Î ÇØ¼®ÇÏ¿© ÀúÀå
-	printf("ÀÔ·ÂµÈ Á¤¼öÀÇ 32ºñÆ® Ç¥Çö : \n"); 
+	tmp = *(unsigned int*)&num; //numì˜ ì£¼ì†Œë¥¼ unsigned int*ë¡œ í•´ì„í•˜ì—¬ ì €ìž¥
+	printf("ìž…ë ¥ëœ ì •ìˆ˜ì˜ 32ë¹„íŠ¸ í‘œí˜„ : \n"); 
 
-	printf("ºÎÈ£ : ");
+	printf("ë¶€í˜¸ : ");
 	for (int i = 31; i >= 31; --i) {
 		printf("%d ", (tmp >> i) & 1);
 	} 
-	printf("\nÁö¼ö : ");
+	printf("\nì§€ìˆ˜ : ");
 	for (int i = 30; i >= 23; --i) {
 		printf("%d ", (tmp >> i) & 1);
 	}
-	printf("\n°¡¼ö : ");
+	printf("\nê°€ìˆ˜ : ");
 	for (int i = 22; i >= 0; --i) {
 		printf("%d ", (tmp >> i) & 1);
-	} // ³ª´©¾î¼­ Ãâ·Â
+	} // ë‚˜ëˆ„ì–´ì„œ ì¶œë ¥
+	return 0;
 }
 
