@@ -23,7 +23,7 @@ int main(void) {
 	printf("%d 이하의 소수: ", n);
 	for (int i = 2; i <= n; i++) {
 		count = 0; 
-		for (int j = 2; j < i; j++) {
+		for (int j = 2; j < i-1; j++) {
 			if (i % j == 0) count++; // i의 나누어 떨어지는 횟수를 계산
 		}
 		if (count == 0) printf("%d ", i); // 나누어 떨어지는 횟수가 없는 경우 출력
