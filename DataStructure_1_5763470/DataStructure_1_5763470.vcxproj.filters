@@ -36,5 +36,11 @@
     <ClCompile Include="7완성_이상민_5763470_0320.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="8완성_이상민_5763470_0325.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9완성_이상민_5763470_0325.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
