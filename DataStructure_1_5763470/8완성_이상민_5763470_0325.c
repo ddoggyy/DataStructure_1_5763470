@@ -22,8 +22,8 @@ FOR i FROM 0 TO 1 DO {
 PRINT "Çà·Ä µ¡¼À °á°ú: "
 FOR i FROM 0 TO 1 DO {
 	PRINT result[i][0], result[i][1]
-}
-*/ 
+}*/
+
 
 #include <stdio.h>
 int main(void) {
