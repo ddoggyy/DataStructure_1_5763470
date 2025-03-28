@@ -30,6 +30,7 @@ int main(void) {
 			if (idSearch == students[i].id) {
 				printf("%s %d %d\n", students[i].name, students[i].id, students[i].score);
 				isCorrect = 1;
+				break;
 			}
 		}
 		if (isCorrect == 0) {
