@@ -51,5 +51,19 @@
     <ClCompile Include="12완성_이상민_5763470_0401.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="LinearList.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearListmain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13완성_이상민_5763470_0408.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinearList.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
