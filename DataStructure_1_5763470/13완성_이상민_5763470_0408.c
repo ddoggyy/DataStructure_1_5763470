@@ -37,9 +37,6 @@ int main() {
 	for (int i = 0; i < List2->last + 1; i++) {
 		ordered_insertItem(sumList, List2->array[i]); // List2의 값을 sumList에 삽입
 	}
-	printList(List1);
-	printList(List2);
-	printList(sumList);
 
 	for (int i = 0; i < sumList->last; i++) { 
 		for (int j = i + 1; j < sumList->last; j++) {
@@ -54,7 +51,7 @@ int main() {
 	printf("List: size = %d, last = %d\n", sumList->size, sumList->last);
 	printf("Items: \n");
 	for (int i = 0; i < sumList->last + 1; i++) {
-		printf("\t[%d] %d, %d, %d\n", i, sumList->array[i].row, sumList->array[i].col, sumList->array[i].val);
+		printf("   [%d] %d, %d, %d\n", i, sumList->array[i].row, sumList->array[i].col, sumList->array[i].val);
 	}
 
 
