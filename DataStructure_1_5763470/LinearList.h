@@ -1,12 +1,17 @@
 #pragma once
-#define NULL_ITEM (elementType) {-1,-1,-1} 
+#define NULL_ITEM (elementType) {0, 0}
 
+typedef struct ElementType {
+	int coef, expo;
+} elementType;
+/*
+#define NULL_ITEM (elementType) {-1,-1,-1} 
 typedef struct ElementType {
 	int row;
 	int col;
 	int val;
 } elementType;
-
+*/
 
 typedef struct {
 	elementType* list;
@@ -23,3 +28,4 @@ extern elementType deleteItem(listType* list, int index);
 extern int printList(listType* list);
 extern int initList(listType* list);
 extern int ordered_insertItem(listType* list, elementType item);
+extern int destroyList(listType* list);

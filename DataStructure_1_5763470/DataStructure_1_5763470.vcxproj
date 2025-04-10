@@ -136,7 +136,10 @@
     <ClCompile Include="12완성_이상민_5763470_0401.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="13완성_이상민_5763470_0408.c" />
+    <ClCompile Include="13완성_이상민_5763470_0408.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="14완성_이상민_5763470_0410.c" />
     <ClCompile Include="1완성_이상민_5763470_0311.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
