@@ -1,31 +1,20 @@
 #pragma once
-#define NULL_ITEM (elementType) {0, 0}
-
-typedef struct ElementType {
-	int coef, expo;
-} elementType;
-/*
-#define NULL_ITEM (elementType) {-1,-1,-1} 
-typedef struct ElementType {
-	int row;
-	int col;
-	int val;
-} elementType;
-*/
+#define MAX 100
+#define NULL_ITEM (elementType) {"", ""}
 
 typedef struct {
-	elementType* list;
+	char name[30];
+	char phone[20];
+} elementType;
+
+typedef struct {
 	int size;
 	int last;
-	int move;
-	elementType *array;
+	elementType array[MAX];
 } listType;
 
-extern listType* createList(int size);
-extern elementType readItem(listType* list, int index);
-extern int insertItem(listType* list, int index, elementType item);
-extern elementType deleteItem(listType* list, int index);
-extern int printList(listType* list);
-extern int initList(listType* list);
-extern int ordered_insertItem(listType* list, elementType item);
-extern int destroyList(listType* list);
+extern void initList(listType* list);
+extern void addContact(listType* list);
+extern void deleteContact(listType* list);
+extern void searchContact(listType* list);
+extern void printAllContacts(listType* list);
