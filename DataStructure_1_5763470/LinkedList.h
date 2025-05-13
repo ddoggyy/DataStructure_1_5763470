@@ -7,8 +7,9 @@ typedef struct ListNode { // linked List의 노드 타입 정의
 	struct ListNode* link;
 } listNode;
 
-typedef struct { // linked List의 헤더
-	listNode* head;
+typedef struct { 
+	listNode* head; // linked List의 헤더
+	listNode* tail; // linked List의 꼬리
 	elementType follow;
 } linkedList_h;
 
@@ -28,8 +29,10 @@ extern void insertLastNode(linkedList_h* L, elementType item);
 extern void insertLastCNode(linkedList_h* L, elementType item);
 
 extern void insertMiddleNode(linkedList_h* L, listNode* pre, elementType item);
+extern void insertMiddleCNode(linkedList_h* L, listNode* pre, elementType item);
 
 extern void insertNthNode(linkedList_h* L, int loc, elementType item);
+extern void insertNthCNode(linkedList_h* L, int loc, elementType item);
 
 extern void ordered_insertNode(linkedList_h* L, elementType item);
 
