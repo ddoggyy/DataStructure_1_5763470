@@ -12,6 +12,7 @@ int printList(linkedList_h* L)  {
 	printf("[%d] \n", lptr->data);
 }
 
+<<<<<<< HEAD
 int printCList(linkedList_h* L) {
 	listNode* lptr = L->head;
 	printf("Circular Linked List(%d): ", L->follow);
@@ -26,6 +27,8 @@ int printCList(linkedList_h* L) {
 	printf("[%d] \n", lptr->data);
 }
 
+=======
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 void insertFirstNode(linkedList_h* L, elementType item) {
 	listNode* newNode; // 노드 생성
 
@@ -37,6 +40,7 @@ void insertFirstNode(linkedList_h* L, elementType item) {
 	return 0;
 }
 
+<<<<<<< HEAD
 void insertFirstCNode(linkedList_h* L, elementType item) {
 	listNode* newNode; // 노드 생성
 
@@ -60,6 +64,8 @@ void insertFirstCNode(linkedList_h* L, elementType item) {
 	return 0;
 }
 
+=======
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 linkedList_h* createLinkedList(void) { // linkedList_h 구조체의 포인터를 반환
 	linkedList_h* lptr; // linkedList_h 구조체 포인터
 	lptr = (linkedList_h*)malloc(sizeof(linkedList_h)); 
@@ -68,10 +74,13 @@ linkedList_h* createLinkedList(void) { // linkedList_h 구조체의 포인터를 반환
 	return lptr;
 }
 
+<<<<<<< HEAD
 linkedList_h* createCLinkedList(void) {
 	return createLinkedList();
 }
 
+=======
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 void destroyLinkedList(linkedList_h* L) {
 	listNode* p; // listNode 구조체 포인터
 
@@ -83,6 +92,7 @@ void destroyLinkedList(linkedList_h* L) {
 	free(L); // 리스트 해체
 }
 
+<<<<<<< HEAD
 void destroyCLinkedList(linkedList_h* L) {
 	listNode* p; // listNode 구조체 포인터
 
@@ -95,6 +105,8 @@ void destroyCLinkedList(linkedList_h* L) {
 	free(L); // 리스트 해체
 }
 
+=======
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 void insertLastNode(linkedList_h* L, elementType item) {
 	listNode* temp, * newNode; // temp는 리스트 순회용, newNode는 새 노드를 의미
 	newNode = (listNode*)malloc(sizeof(listNode));
@@ -115,6 +127,7 @@ void insertLastNode(linkedList_h* L, elementType item) {
 	return;
 }
 
+<<<<<<< HEAD
 void insertLastCNode(linkedList_h* L, elementType item) {
 	listNode* temp, * newNode; // temp는 리스트 순회용, newNode는 새 노드를 의미
 	newNode = (listNode*)malloc(sizeof(listNode));
@@ -135,6 +148,8 @@ void insertLastCNode(linkedList_h* L, elementType item) {
 	return;
 }
 
+=======
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 void insertMiddleNode(linkedList_h* L, listNode* pre, elementType item) {
 
 	listNode* newNode;
@@ -215,6 +230,7 @@ void deleteNode(linkedList_h* L, listNode* p) { // p는 삭제하려는 노드를 나타내�
 	else if (p == (listNode*)NULL) return; // 삭제 대상 노드가 NULL이면 없으므로 리턴
 	else {
 		pre = L->head; // pre를 리스트의 헤더로 초기화
+<<<<<<< HEAD
 		while (pre->link != p && p->link != (listNode*)NULL) {
 			pre = pre->link;
 			L->follow++;
@@ -249,6 +265,15 @@ void deleteCNode(linkedList_h* L, listNode* p) { // p는 삭제하려는 노드를 나타내
 			pre->link = p->link; // pre의 다음 노드는 삭제 노드의 다음 노드로 이동
 			free(p);
 		}
+=======
+		while (pre->link != p && p->link != (listNode*)NULL) pre = pre->link;
+		// pre의 다음 노드가 삭제 노드가 아니고, 삭제 노드의 다음 노드가 NULL이 아닐때까지 pre를 다음 노드로 이동
+		if (pre->link == p) { //  pre의 다음 노드가 삭제 노드라면
+			pre->link = p->link; // pre의 다음 노드는 삭제 노드의 다음 노드로 이동
+			free(p); 
+			L->follow++;
+		}
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 		else fprintf(stderr, "delete item not in the list\n"); // p가 리스트 내에 없으니 오류 메시지 출력
 	}
 }

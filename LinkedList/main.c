@@ -43,6 +43,7 @@ main()
 
 	deleteNode(myList, myList->head->link->link);
 	printList(myList);
+<<<<<<< HEAD
 
 	destroyLinkedList(myList);
 
@@ -57,4 +58,6 @@ main()
 	printCList(myList);
 	deleteCNode(myList, myList->head->link->link);
 	printCList(myList);
+=======
+>>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
 }
