@@ -1,63 +1,62 @@
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "LinkedList.h"
 
-main()
-{
-	/*
-	linkedList_h myList;
-	myList.head = (listNode*)NULL;
-	*/
+#include "Linked List.h"
 
-	linkedList_h* myList;
-	myList = createLinkedList();
+main() {
 
-	insertFirstNode(myList, 1);
-	insertFirstNode(myList, 2);
-	insertFirstNode(myList, 3);
-	insertFirstNode(myList, 4);
-	insertFirstNode(myList, 5);
+	// linkedList_h mylist;
+	// mylist.head = (listNode*)NULL;
 
-	insertLastNode(myList, 6);
-	insertLastNode(myList, 7);
-	insertLastNode(myList, 8);
-	
-	insertMiddleNode(myList, myList->head->link->link, 9);
+	linkedList_h* mylist;
+	mylist = createLinkedList();
 
-	insertNthNode(myList, 2, 20);
+	insertFirstNode(mylist, 1);
+	insertFirstNode(mylist, 2);
+	insertFirstNode(mylist, 3);
+	insertFirstNode(mylist, 4);
+	insertFirstNode(mylist, 5);
 
-	printList(myList);
-	destroyLinkedList(myList);
+	insertLastNode(mylist, 6);
+	insertLastNode(mylist, 7);
+	insertLastNode(mylist, 8);
 
-	printf("Destroy unorder linked list and create new ordered linked list\n");
-	myList = createLinkedList();
+	insertMiddleNode(mylist, mylist->head->link->link, 9);
 
-	ordered_insertNode(myList, 5);
-	ordered_insertNode(myList, 3);
-	ordered_insertNode(myList, 8);
-	ordered_insertNode(myList, 2);
-	ordered_insertNode(myList, 9);
-	ordered_insertNode(myList, 11);
+	insertNthNode(mylist, 2, 20);
 
-	printList(myList);
+	printList(mylist);
+	destroyLinkedList(mylist);
 
-	deleteNode(myList, myList->head->link->link);
-	printList(myList);
-<<<<<<< HEAD
+	printf(" Destroy unoreder linked list and new oredered linked list\n");
+	mylist = createLinkedList();
 
-	destroyLinkedList(myList);
+	ordered_insertNode(mylist, 5);
+	ordered_insertNode(mylist, 3);
+	ordered_insertNode(mylist, 8);
+	ordered_insertNode(mylist, 2);
+	ordered_insertNode(mylist, 9);
+	ordered_insertNode(mylist, 11);
 
-	myList = createCLinkedList();
+	printList(mylist);
 
-	insertFirstCNode(myList, 1);
-	insertFirstCNode(myList, 2);
-	insertFirstCNode(myList, 3);
-	insertFirstCNode(myList, 4);
-	insertFirstCNode(myList, 5);
+	deleteNode(mylist, mylist->head->link->link);
+	printList(mylist);
 
-	printCList(myList);
-	deleteCNode(myList, myList->head->link->link);
-	printCList(myList);
-=======
->>>>>>> 436ffbbf1f7d160979f5e2f6ca34170026c2cf72
+	destroyLinkedList(mylist);
+
+	mylist = createCLinkedList();
+	insertFirstCNode(mylist, 1);
+	insertFirstCNode(mylist, 2);
+	insertFirstCNode(mylist, 3);
+	insertFirstCNode(mylist, 4);
+	insertFirstCNode(mylist, 5);
+
+	printCList(mylist);
+	deleteCNode(mylist, mylist->head->link->link);
+	printCList(mylist);
+
+	destroyCLinkedList(mylist);
+
 }

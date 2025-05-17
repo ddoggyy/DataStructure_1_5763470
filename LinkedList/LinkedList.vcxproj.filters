@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList.c">
+    <ClCompile Include="Linked List.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="main.c">
@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList.h">
+    <ClInclude Include="Linked List.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
