@@ -51,12 +51,6 @@
     <ClCompile Include="12완성_이상민_5763470_0401.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="LinearList_old.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LinearListmain.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="13완성_이상민_5763470_0408.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -64,9 +58,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="15완성_이상민_5763470_0417.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LinearList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="16미완성_이상민_5763470_0515.c">
@@ -77,12 +68,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinearList_old.h">
-      <Filter>리소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="LinearList.h">
-      <Filter>리소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="LinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
