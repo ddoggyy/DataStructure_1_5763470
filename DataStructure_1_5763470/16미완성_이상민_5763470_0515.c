@@ -3,15 +3,17 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 
-int returnItem(int item)
+int returnItem()
 {
+	int item = 0;
 	printf("»ðÀÔÇÒ °ª: ");
 	scanf("%d", &item);
 	return item;
 }
 
-int returnLocation(int loc)
+int returnLocation()
 {
+	int loc = 0;
 	printf("»ðÀÔÇÒ À§Ä¡: ");
 	scanf("%d", &loc);
 	return loc;
@@ -46,26 +48,26 @@ int main(void)
 
 		switch (menuSelect) {
 		case 1:
-			returnItem(item);
+			item = returnItem();
 			insertFirstCNode(myList, item);
 			break;
 		case 2:
-			returnItem(item);
+			item = returnItem();
 			insertLastCNode(myList, item);
 			break;
 		case 3:
-			returnItem(item);
-			returnLocation(loc);
+			item = returnItem();
+			loc = returnLocation();
 			insertMiddleCNode(myList, loc, item);
 			break;
 		case 4:
-			returnItem(item);
-			returnLocation(loc);
+			item = returnItem();
+			loc = returnLocation();
 			insertNthCNode(myList, loc, item);
 			break;
 		case 6:
-			returnItem(item);
-			returnLocation(loc);
+			item = returnItem();
+			loc = returnLocation();
 			deleteCNode(myList, item);
 			break;
 		case 7:
