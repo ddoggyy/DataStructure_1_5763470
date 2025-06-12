@@ -130,8 +130,12 @@
     <None Include="queue.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DCLinkedList.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="queue.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DCLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
